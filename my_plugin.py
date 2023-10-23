@@ -9,14 +9,17 @@ MENU_ENTRY_LABEL = "My cool tool"
 
 MENU_PARENT = "MayaWindow"  # do not change
 
+_pip_qt_widget = None
 
 def maya_useNewAPI():  # noqa
     pass  # dummy method to tell Maya this plugin uses Maya Python API 2.0
 
 # =============================== Menu ===========================================
 def show(*args):
-    # TODO import our custom module
-    print("hello")
+    import pip_qt
+    
+    global _pip_qt_widget
+    _pip_qt_widget = pip_qt.show()
 
 
 def loadMenu():
