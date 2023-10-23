@@ -18,6 +18,11 @@ def maya_useNewAPI():  # noqa
 def show(*args):
     import pip_qt
     
+    # hookup interpeter to prevent freezing during py-pip install
+    if not sys.executable.endswith("maya.exe"):
+        raise Exception(sys.executable, "doesn't end in maya.exe, can't hookup python interpreter")
+    py_pip.python_interpreter = sys.executable.replace("maya.exe", "mayapy.exe")
+    
     global _pip_qt_widget
     _pip_qt_widget = pip_qt.show()
 
