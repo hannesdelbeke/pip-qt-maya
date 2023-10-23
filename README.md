@@ -14,3 +14,4 @@ python -m pip install pip-qt --target "C:/Users/%username%/Documents/Maya/script
 python -m pip --no-dependencies install https://github.com/hannesdelbeke/maya-pip-qt/archive/refs/heads/main.zip --target "C:/Users/%username%/Documents/Maya/plug-ins"
 ```
 3. Open the plugin manager, and load the plugin.
+4. A new menu should show `Tools`, open the window from here.
