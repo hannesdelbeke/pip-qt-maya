@@ -11,7 +11,7 @@ install dependencies
 ```
 python -m pip install pip-qt --target "C:/Users/%username%/Documents/Maya/scripts"
 ```
-install plugin
+install plugin without dependencies
 ```
-python -m pip install https://github.com/hannesdelbeke/maya-pip-qt/archive/refs/heads/main.zip --target "C:/Users/%username%/Documents/Maya/plug-ins"
+python -m pip --no-dependencies install https://github.com/hannesdelbeke/maya-pip-qt/archive/refs/heads/main.zip --target "C:/Users/%username%/Documents/Maya/plug-ins"
 ```
