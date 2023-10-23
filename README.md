@@ -1,4 +1,4 @@
-# ⚠️ this freezes in Maya Atm, needs fixing ⚠️
+# ⚠️ this freezes in Maya on install & list, needs fixing ⚠️
 
 # Maya Pip Qt plugin
 
