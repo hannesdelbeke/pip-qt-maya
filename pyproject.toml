@@ -1,10 +1,6 @@
 [build-system]
 requires = ["setuptools", "setuptools-scm"]
-# build-backend = "setuptools.build_meta"
-
-
-[tool.setuptools]
-py_modules = ["my_plugin"]
+build-backend = "setuptools.build_meta"
 
 
 [project]
