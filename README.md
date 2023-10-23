@@ -5,6 +5,7 @@
 A Maya plugin to add [pip-qt](https://github.com/hannesdelbeke/pip-qt) to the menu. 
 
 ## Install
+To install for a specific Maya version only, e.g. 2022, replace `Maya/scripts` with `Maya/2022/scripts`
 1. install dependencies to `Documents/Maya/scripts`
 ```
 python -m pip install pip-qt --target "C:/Users/%username%/Documents/Maya/scripts"
