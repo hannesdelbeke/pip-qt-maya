@@ -1,4 +1,4 @@
-# Maya Python plugin template
+# Maya Pip Qt plugin
 
 A Maya plugin to add [pip-qt](https://github.com/hannesdelbeke/pip-qt) to the menu. 
 
