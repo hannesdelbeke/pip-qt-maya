@@ -1,8 +1,7 @@
-# ⚠️ this freezes in Maya on install & list, needs fixing ⚠️
-
 # Maya Pip Qt plugin
 
-A Maya plugin to add [pip-qt](https://github.com/hannesdelbeke/pip-qt) to the menu. 
+A Maya plugin to add [pip-qt](https://github.com/hannesdelbeke/pip-qt) to the menu.  
+![image](https://github.com/hannesdelbeke/maya-pip-qt/assets/3758308/26dd3524-9589-4cab-9ff6-3745577ea262)
 
 ## Install
 To install for a specific Maya version only, e.g. 2022, replace `Maya/scripts` with `Maya/2022/scripts`
