@@ -4,8 +4,8 @@ import maya.cmds as cmds
 
 
 MENU_NAME = "ToolsMenu"  # no spaces in names, use CamelCase
-MENU_LABEL = "Tools"  # spaces are fine in labels
-MENU_ENTRY_LABEL = "My cool tool"
+MENU_LABEL = "Tools"  # no spaces in names, use CamelCase
+MENU_ENTRY_LABEL = "Python package manager"
 
 MENU_PARENT = "MayaWindow"  # do not change
 
@@ -23,9 +23,9 @@ def show(*args):
 
 
 def loadMenu():
-    if not cmds.menu(MENU_NAME, exists=True):
+    if not cmds.menu(f"{MENU_PARENT}|{MENU_NAME}", exists=True):
         cmds.menu(MENU_NAME, label=MENU_LABEL, parent=MENU_PARENT)
-    cmds.menuItem(label=MENU_ENTRY_LABEL, command=show)  # , parent=MENU_NAME)  
+    cmds.menuItem(label=MENU_ENTRY_LABEL, command=show, parent=f"{MENU_PARENT}|{MENU_NAME}")  
 
 
 def unloadMenuItem():
