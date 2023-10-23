@@ -1,1 +1,1 @@
-qt-pip
+pip-qt
