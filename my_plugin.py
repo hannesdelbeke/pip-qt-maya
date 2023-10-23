@@ -9,42 +9,9 @@ MENU_ENTRY_LABEL = "My cool tool"
 
 MENU_PARENT = "MayaWindow"  # do not change
 
+
 def maya_useNewAPI():  # noqa
     pass  # dummy method to tell Maya this plugin uses Maya Python API 2.0
-
-
-# =============================== Command ===========================================
-class HelloWorldCommand(om.MPxCommand):
-    command_name = "HelloWorld"
-
-    # def __init__(self):
-    #     om.MPxCommand.__init__(self)
-
-    # @staticmethod
-    # def command_creator():
-    #     return HelloWorldCommand()
-
-    def doIt(self, args):
-        print ("Hello World!")
-
-
-def register_command(plugin):
-    pluginFn = om.MFnPlugin(plugin)
-    try:
-        pluginFn.registerCommand(HelloWorldCommand.command_name, HelloWorldCommand.__init__)
-    except Exception as e:
-        sys.stderr.write(f"Failed to register command: {HelloWorldCommand.command_name}\n")
-        raise e
-  
-
-def unregister_command(plugin):
-    pluginFn = om.MFnPlugin(plugin)
-    try:
-        pluginFn.deregisterCommand(HelloWorldCommand.command_name)
-    except Exception as e:
-        sys.stderr.write(f"Failed to unregister command: {HelloWorldCommand.command_name}\n")
-        raise e
-
 
 # =============================== Menu ===========================================
 def show(*args):
@@ -71,11 +38,8 @@ def unloadMenuItem():
 
 # =============================== Plugin (un)load ===========================================
 def initializePlugin(plugin):
-    register_command(plugin)
     loadMenu()
 
 
 def uninitializePlugin(plugin):
-    unregister_command(plugin)
     unloadMenuItem()
-    
