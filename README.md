@@ -2,6 +2,8 @@
 
 A Maya plugin to add [pip-qt](https://github.com/hannesdelbeke/pip-qt) to the menu.  
 
+## Features
+
 - add to menu `Tools/Python package manager`
 - sets Python interpreter path
 - sets target install folder for modules to `documents/maya/scripts`
