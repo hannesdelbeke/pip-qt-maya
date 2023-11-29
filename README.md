@@ -23,3 +23,6 @@ python -m pip --no-dependencies install https://github.com/hannesdelbeke/maya-pi
 ```
 3. Open the plugin manager, and load the plugin.
 4. A new menu should show `Tools`, open the window from here.
+
+## other
+- plugget package https://github.com/plugget/plugget-pkgs/tree/main/maya/pip-qt-maya
