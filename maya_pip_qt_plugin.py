@@ -1,6 +1,7 @@
 import sys
 import maya.api.OpenMaya as om
 import maya.cmds as cmds
+import os
 
 
 MENU_NAME = "ToolsMenu"  # no spaces in names, use CamelCase
