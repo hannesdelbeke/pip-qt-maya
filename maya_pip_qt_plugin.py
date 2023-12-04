@@ -21,7 +21,7 @@ def show(*args):
     # hookup interpeter to prevent freezing during py-pip install
     if not sys.executable.endswith("maya.exe"):
         raise Exception(sys.executable, "doesn't end in maya.exe, can't hookup python interpreter")
-    py_pip.python_interpreter = sys.executable.replace("maya.exe", "mayapy.exe")
+    pip_qt.py_pip.python_interpreter = sys.executable.replace("maya.exe", "mayapy.exe")
 
     # TODO add support for other OS
     user_home = os.path.expanduser("~")
